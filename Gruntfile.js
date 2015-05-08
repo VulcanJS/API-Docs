@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     jsdoc : {
       dist : {
         options: {
-          destination: 'doc',
+          destination: 'docs',
           template : "node_modules/grunt-jsdoc/node_modules/ink-docstrap/template",
           configure : "jsdoc.conf.json",
           recurse : true
