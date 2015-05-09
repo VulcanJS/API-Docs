@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Telescope API Namespace: schemas</title>
+	<title>Telescope API Class: Collection</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -165,14 +165,12 @@ Get a list of all fields editable by a specific user for a given schema</a>
 					
 
 
-	<h1 class="page-title">Namespace: schemas</h1>
+	<h1 class="page-title">Class: Collection</h1>
 <section>
 
 <header>
     <h2>
-        <span class="ancestors"><a href="Telescope.html">Telescope</a>.</span>
-    
-    schemas
+    Collection
     </h2>
     
 </header>
@@ -183,10 +181,26 @@ Get a list of all fields editable by a specific user for a given schema</a>
 
     
         
-            <div class="description"><p>Global schemas object. Note: not reactive, won't be updated after initialization</p></div>
-        
+<dt>
+    <h4 class="name" id="Collection"><span class="type-signature"></span>new Collection<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Meteor Collections.</p>
+    </div>
+    
 
-        
+    
+    
+    
+    
+    
+    
+    
 <dl class="details">
 	
 
@@ -214,7 +228,7 @@ Get a list of all fields editable by a specific user for a given schema</a>
 		<ul class="dummy">
 			<li>
 				<a href="telescope-lib_lib_collections.js.html">telescope-lib/lib/collections.js</a>,
-				 <a href="telescope-lib_lib_collections.js.html#sunlight-1-line-66">line 66</a>
+				 <a href="telescope-lib_lib_collections.js.html#sunlight-1-line-1">line 1</a>
 			</li>
 		</ul>
 	</dd>
@@ -227,8 +241,20 @@ Get a list of all fields editable by a specific user for a given schema</a>
 	
 </dl>
 
+    
+    
 
-        
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
     
     </div>
 
@@ -243,34 +269,80 @@ Get a list of all fields editable by a specific user for a given schema</a>
     
 
     
-        <h3 class="subsection-title">Members</h3>
+
+    
+        <h3 class="subsection-title">Methods</h3>
 
         <dl>
             
-<dt class="name" id=".comments">
-    <h4><span class="type-signature">&lt;static> </span>comments<span class="type-signature"> :SimpleSchema</span></h4>
-
+<dt>
+    <h4 class="name" id="registerField"><span class="type-signature"></span>registerField<span class="signature">(field)</span><span class="type-signature"></span></h4>
+    
     
 </dt>
 <dd>
     
+    
     <div class="description">
-        <p>Comments schema</p>
+        <p>Add an additional field to a schema.</p>
     </div>
     
 
     
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">SimpleSchema</span>
-
-
-            </li>
-        </ul>
     
+    
+    
+    
+        <h5>Parameters:</h5>
+        
 
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>field</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
     
 <dl class="details">
 	
@@ -298,8 +370,8 @@ Get a list of all fields editable by a specific user for a given schema</a>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="telescope-comments_lib_comments.js.html">telescope-comments/lib/comments.js</a>,
-				 <a href="telescope-comments_lib_comments.js.html#sunlight-1-line-11">line 11</a>
+				<a href="telescope-lib_lib_collections.js.html">telescope-lib/lib/collections.js</a>,
+				 <a href="telescope-lib_lib_collections.js.html#sunlight-1-line-10">line 10</a>
 			</li>
 		</ul>
 	</dd>
@@ -312,107 +384,90 @@ Get a list of all fields editable by a specific user for a given schema</a>
 	
 </dl>
 
+    
+    
 
+    
+
+    
+    
+    
+    
+    
+    
     
 </dd>
 
         
             
-<dt class="name" id=".posts">
-    <h4><span class="type-signature">&lt;static> </span>posts<span class="type-signature"> :SimpleSchema</span></h4>
-
+<dt>
+    <h4 class="name" id="removeField"><span class="type-signature"></span>removeField<span class="signature">(fieldName)</span><span class="type-signature"></span></h4>
+    
     
 </dt>
 <dd>
     
+    
     <div class="description">
-        <p>Posts schema</p>
+        <p>Remove a field from a schema.</p>
     </div>
     
 
     
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">SimpleSchema</span>
-
-
-            </li>
-        </ul>
     
-
     
-<dl class="details">
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="telescope-posts_lib_posts.js.html">telescope-posts/lib/posts.js</a>,
-				 <a href="telescope-posts_lib_posts.js.html#sunlight-1-line-11">line 11</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
     
-</dd>
-
+    
+        <h5>Parameters:</h5>
         
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
             
-<dt class="name" id=".userData">
-    <h4><span class="type-signature">&lt;static> </span>userData<span class="type-signature"> :SimpleSchema</span></h4>
+                <td class="name"><code>fieldName</code></td>
+            
 
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>User Data schema</p>
-    </div>
-    
-
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
+            <td class="type">
+            
                 
-<span class="param-type">SimpleSchema</span>
+<span class="param-type">String</span>
 
 
-            </li>
-        </ul>
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
     
-
+    
     
 <dl class="details">
 	
@@ -440,8 +495,8 @@ Get a list of all fields editable by a specific user for a given schema</a>
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="telescope-users_lib_users.js.html">telescope-users/lib/users.js</a>,
-				 <a href="telescope-users_lib_users.js.html#sunlight-1-line-23">line 23</a>
+				<a href="telescope-lib_lib_collections.js.html">telescope-lib/lib/collections.js</a>,
+				 <a href="telescope-lib_lib_collections.js.html#sunlight-1-line-25">line 25</a>
 			</li>
 		</ul>
 	</dd>
@@ -454,155 +509,21 @@ Get a list of all fields editable by a specific user for a given schema</a>
 	
 </dl>
 
-
     
-</dd>
-
-        
-            
-<dt class="name" id=".users">
-    <h4><span class="type-signature">&lt;static> </span>users<span class="type-signature"> :SimpleSchema</span></h4>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Users schema</p>
-    </div>
     
 
     
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">SimpleSchema</span>
-
-
-            </li>
-        </ul>
-    
 
     
-<dl class="details">
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="telescope-users_lib_users.js.html">telescope-users/lib/users.js</a>,
-				 <a href="telescope-users_lib_users.js.html#sunlight-1-line-113">line 113</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
     
-</dd>
-
-        
-            
-<dt class="name" id=".votes">
-    <h4><span class="type-signature">&lt;static> </span>votes<span class="type-signature"> :SimpleSchema</span></h4>
-
     
-</dt>
-<dd>
     
-    <div class="description">
-        <p>Vote schema</p>
-    </div>
     
-
     
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">SimpleSchema</span>
-
-
-            </li>
-        </ul>
-    
-
-    
-<dl class="details">
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="telescope-users_lib_users.js.html">telescope-users/lib/users.js</a>,
-				 <a href="telescope-users_lib_users.js.html#sunlight-1-line-5">line 5</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
     
 </dd>
 
         </dl>
-    
-
     
 
     

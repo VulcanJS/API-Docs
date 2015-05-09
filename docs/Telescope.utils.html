@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>DocStrap Namespace: utils</title>
+	<title>Telescope API Namespace: utils</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,7 +18,7 @@
 <div class="container-fluid">
 	<div class="navbar navbar-fixed-top navbar-inverse">
 		<div class="navbar-inner">
-			<a class="brand" href="index.html">DocStrap</a>
+			<a class="brand" href="index.html">Telescope API</a>
 			<ul class="nav">
 				
 				<li class="dropdown">
@@ -40,7 +40,15 @@
 						</li>
 						
 						<li>
+							<a href="Posts.controllers.html">Posts.controllers</a>
+						</li>
+						
+						<li>
 							<a href="Posts.views.html">Posts.views</a>
+						</li>
+						
+						<li>
+							<a href="Settings.html">Settings</a>
 						</li>
 						
 						<li>
@@ -52,11 +60,23 @@
 						</li>
 						
 						<li>
+							<a href="Telescope.config.html">Telescope.config</a>
+						</li>
+						
+						<li>
+							<a href="Telescope.menus.html">Telescope.menus</a>
+						</li>
+						
+						<li>
 							<a href="Telescope.modules.html">Telescope.modules</a>
 						</li>
 						
 						<li>
 							<a href="Telescope.schemas.html">Telescope.schemas</a>
+						</li>
+						
+						<li>
+							<a href="Telescope.subscriptions.html">Telescope.subscriptions</a>
 						</li>
 						
 						<li>
@@ -88,6 +108,20 @@
 				</li>
 				
 				<li class="dropdown">
+					<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b
+						class="caret"></b></a>
+
+					<ul class="dropdown-menu ">
+						
+						<li>
+							<a href="Mongo.Collection.html">Mongo.Collection</a>
+						</li>
+						
+
+					</ul>
+				</li>
+				
+				<li class="dropdown">
 					<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b
 						class="caret"></b></a>
 
@@ -107,6 +141,11 @@
 						
 						<li>
 							<a href="global.html#setupUser">setupUser</a>
+						</li>
+						
+						<li>
+							<a href="global.html#SimpleSchema.getEditableFieldsGetalistofallfieldseditablebyaspecificuserforagivenschema">SimpleSchema.getEditableFields
+Get a list of all fields editable by a specific user for a given schema</a>
 						</li>
 						
 
@@ -203,6 +242,132 @@
 
     
 
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+<dt class="name" id=".colorTable">
+    <h4><span class="type-signature">&lt;static> </span>colorTable<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>A dictionnary of all the elements that use custom colors</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="telescope-lib_lib_colors.js.html">telescope-lib/lib/colors.js</a>,
+				 <a href="telescope-lib_lib_colors.js.html#sunlight-1-line-4">line 4</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<dt class="name" id=".icons">
+    <h4><span class="type-signature">&lt;static> </span>icons<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>A directory of icon keys and icon codes</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="telescope-lib_lib_icons.js.html">telescope-lib/lib/icons.js</a>,
+				 <a href="telescope-lib_lib_icons.js.html#sunlight-1-line-18">line 18</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        </dl>
     
 
     
@@ -711,6 +876,174 @@
         
             
 <dt>
+    <h4 class="name" id=".getIcon"><span class="type-signature">&lt;static> </span>getIcon<span class="signature">(iconName, <span class="optional">iconClass</span>)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Take an icon name (such as &quot;open&quot;) and return the HTML code to display the icon</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+		<th>Argument</th>
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>iconName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the name of the icon</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>iconClass</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>an optional class to assign to the icon</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="telescope-lib_lib_icons.js.html">telescope-lib/lib/icons.js</a>,
+				 <a href="telescope-lib_lib_icons.js.html#sunlight-1-line-8">line 8</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
     <h4 class="name" id=".getSiteUrl"><span class="type-signature">&lt;static> </span>getSiteUrl<span class="signature">()</span><span class="type-signature"></span></h4>
     
     
@@ -758,6 +1091,221 @@
 			<li>
 				<a href="telescope-lib_lib_utils.js.html">telescope-lib/lib/utils.js</a>,
 				 <a href="telescope-lib_lib_utils.js.html#sunlight-1-line-10">line 10</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id=".registerElementColor"><span class="type-signature">&lt;static> </span>registerElementColor<span class="signature">(selector, color, <span class="optional">property</span>)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Register an element to use a custom color</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+		<th>Argument</th>
+		
+
+		
+		<th>Default</th>
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>the CSS selector of the element</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>the color. Either <code>accentColor</code>, <code>accentContrastColor</code>, <code>secondaryColor</code>, or <code>secondaryContrastColor</code></p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>property</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    color
+                
+                </td>
+            
+
+            <td class="description last"><p>the property to colorize. Usually <code>color</code>, <code>background-color</code>, <code>border-color</code>, etc.</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="telescope-lib_lib_colors.js.html">telescope-lib/lib/colors.js</a>,
+				 <a href="telescope-lib_lib_colors.js.html#sunlight-1-line-17">line 17</a>
 			</li>
 		</ul>
 	</dd>
@@ -950,11 +1498,9 @@
 				<div class="clearfix"></div>
 				<footer>
 					
-					
-		<span class="copyright">
-		DocStrap Copyright © 2012-2014 The contributors to the JSDoc3 and DocStrap projects.
-		</span>
+					Telescope API Documentation
 					<br />
+					
 					
 		<span class="jsdoc-message">
 		Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-beta3</a>

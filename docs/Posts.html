@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>DocStrap Namespace: Posts</title>
+	<title>Telescope API Namespace: Posts</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,7 +18,7 @@
 <div class="container-fluid">
 	<div class="navbar navbar-fixed-top navbar-inverse">
 		<div class="navbar-inner">
-			<a class="brand" href="index.html">DocStrap</a>
+			<a class="brand" href="index.html">Telescope API</a>
 			<ul class="nav">
 				
 				<li class="dropdown">
@@ -40,7 +40,15 @@
 						</li>
 						
 						<li>
+							<a href="Posts.controllers.html">Posts.controllers</a>
+						</li>
+						
+						<li>
 							<a href="Posts.views.html">Posts.views</a>
+						</li>
+						
+						<li>
+							<a href="Settings.html">Settings</a>
 						</li>
 						
 						<li>
@@ -52,11 +60,23 @@
 						</li>
 						
 						<li>
+							<a href="Telescope.config.html">Telescope.config</a>
+						</li>
+						
+						<li>
+							<a href="Telescope.menus.html">Telescope.menus</a>
+						</li>
+						
+						<li>
 							<a href="Telescope.modules.html">Telescope.modules</a>
 						</li>
 						
 						<li>
 							<a href="Telescope.schemas.html">Telescope.schemas</a>
+						</li>
+						
+						<li>
+							<a href="Telescope.subscriptions.html">Telescope.subscriptions</a>
 						</li>
 						
 						<li>
@@ -88,6 +108,20 @@
 				</li>
 				
 				<li class="dropdown">
+					<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b
+						class="caret"></b></a>
+
+					<ul class="dropdown-menu ">
+						
+						<li>
+							<a href="Mongo.Collection.html">Mongo.Collection</a>
+						</li>
+						
+
+					</ul>
+				</li>
+				
+				<li class="dropdown">
 					<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b
 						class="caret"></b></a>
 
@@ -107,6 +141,11 @@
 						
 						<li>
 							<a href="global.html#setupUser">setupUser</a>
+						</li>
+						
+						<li>
+							<a href="global.html#SimpleSchema.getEditableFieldsGetalistofallfieldseditablebyaspecificuserforagivenschema">SimpleSchema.getEditableFields
+Get a list of all fields editable by a specific user for a given schema</a>
 						</li>
 						
 
@@ -203,6 +242,9 @@
         <h3 class="subsection-title">Namespaces</h3>
 
         <dl>
+            <dt><a href="namespaces.html#Posts.controllers"><a href="Posts.controllers.html">controllers</a></a></dt>
+            <dd></dd>
+        
             <dt><a href="namespaces.html#Posts.views"><a href="Posts.views.html">views</a></a></dt>
             <dd></dd>
         </dl>
@@ -487,6 +529,325 @@ We need the current user so we know who to upvote the existing post as.</p>
 			<li>
 				<a href="telescope-posts_lib_helpers.js.html">telescope-posts/lib/helpers.js</a>,
 				 <a href="telescope-posts_lib_helpers.js.html#sunlight-1-line-91">line 91</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id=".edit"><span class="type-signature">&lt;static> </span>edit<span class="signature">(postId, modifier, post)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Edit a post in the database</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>postId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>– the ID of the post being edited</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>modifier</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>– the modifier object</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>post</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the current post object</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="telescope-posts_lib_methods.js.html">telescope-posts/lib/methods.js</a>,
+				 <a href="telescope-posts_lib_methods.js.html#sunlight-1-line-77">line 77</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id=".editPost"><span class="type-signature">&lt;static> </span>editPost<span class="signature">(modifier, postId)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Meteor method for editing a post from the client</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>modifier</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the update modifier</p></td>
+        </tr>
+
+	
+
+        <tr>
+            
+                <td class="name"><code>postId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the id of the post being updated</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="telescope-posts_lib_methods.js.html">telescope-posts/lib/methods.js</a>,
+				 <a href="telescope-posts_lib_methods.js.html#sunlight-1-line-192">line 192</a>
 			</li>
 		</ul>
 	</dd>
@@ -1325,7 +1686,7 @@ and options arguments for the subscriptions's Posts.find()</p>
 
             
 
-            <td class="description last"><p>– the post being inserted</p>
+            <td class="description last"><p>the post being inserted</p>
                 <h6>Properties</h6>
                 
 
@@ -1367,7 +1728,7 @@ and options arguments for the subscriptions's Posts.find()</p>
 
             
 
-            <td class="description last"><p>– the id of the user the post belongs to</p></td>
+            <td class="description last"><p>the id of the user the post belongs to</p></td>
         </tr>
 
 	
@@ -1461,6 +1822,131 @@ and options arguments for the subscriptions's Posts.find()</p>
     
 </dd>
 
+        
+            
+<dt>
+    <h4 class="name" id=".submitPost"><span class="type-signature">&lt;static> </span>submitPost<span class="signature">(post)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Meteor method for submitting a post from the client</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+
+		<th>Type</th>
+
+		
+
+		
+
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+
+	<tbody>
+	
+
+        <tr>
+            
+                <td class="name"><code>post</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the post being inserted</p></td>
+        </tr>
+
+	
+	</tbody>
+</table>
+
+    
+    
+    
+<dl class="details">
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="telescope-posts_lib_methods.js.html">telescope-posts/lib/methods.js</a>,
+				 <a href="telescope-posts_lib_methods.js.html#sunlight-1-line-114">line 114</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
         </dl>
     
 
@@ -1479,11 +1965,9 @@ and options arguments for the subscriptions's Posts.find()</p>
 				<div class="clearfix"></div>
 				<footer>
 					
-					
-		<span class="copyright">
-		DocStrap Copyright © 2012-2014 The contributors to the JSDoc3 and DocStrap projects.
-		</span>
+					Telescope API Documentation
 					<br />
+					
 					
 		<span class="jsdoc-message">
 		Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-beta3</a>
